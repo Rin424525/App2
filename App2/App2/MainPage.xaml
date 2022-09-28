@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+
+
+    <Grid  BackgroundColor="white">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="130" />
+            <RowDefinition Height="115"/>
+            <RowDefinition Height="115"/>
+            <RowDefinition  Height="115"/>
+            <RowDefinition Height="115"/>
+            <RowDefinition Height="115"/>
+            <RowDefinition Height="15"/>
+         
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition  />
+            <ColumnDefinition />
+            <ColumnDefinition  />
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="resultText" FontSize="20" Grid.ColumnSpan="4" FontAttributes="Bold" Background="Black"
+                Text="0"
+                TextColor="White"
+                HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                LineBreakMode="NoWrap"/>
+
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="←" 
+               TextColor="Wheat" Clicked="OnSelectOperator2"/>
+        
+        <Button Grid.Row="1"
+                 Grid.Column="2"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="%"
+               TextColor="Wheat" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="1"
+                 Grid.Column="3"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="/"
+               TextColor="Wheat" Clicked="OnSelectOperator"/>
+        
+        <Button Grid.Row="1"
+                 Grid.Column="0"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="C"
+               TextColor="Wheat" Clicked="OnClear"/>
+        <Button Grid.Row="2"
+                 Grid.Column="1"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="8" 
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2"
+                 Grid.Column="2"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="9"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2"
+                 Grid.Column="3"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="*"
+               TextColor="Wheat" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="3"
+                 Grid.Column="3"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="-"
+               TextColor="Wheat" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="3"
+                 Grid.Column="0"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="4"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="3"
+                 Grid.Column="1"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="5"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="3"
+                 Grid.Column="2"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="6"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="2"
+                 Grid.Column="0"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="7"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="4"
+                 Grid.Column="0"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="1"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        
+        <Button Grid.Row="4"
+                 Grid.Column="1"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="2"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="4"
+                 Grid.Column="2"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="3"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        <Button Grid.Row="4"
+                 Grid.Column="3"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="+"
+               TextColor="Wheat" Clicked="OnSelectOperator"/>
+        <Button Grid.Row="5"
+                 Grid.ColumnSpan="2"
+                 BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="0"
+               TextColor="Wheat" Clicked="OnSelectNumber"/>
+        
+        <Button Grid.Row="5"
+                 Grid.Column="2"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text=","
+               TextColor="Wheat" Clicked="ZP"/>
+        <Button Grid.Row="5"
+                 Grid.Column="3"
+               BackgroundColor="Black"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+               Text="="
+               TextColor="Wheat" Clicked="OnCalculate"/>
+
+
+    </Grid>
+
+
+</ContentPage>
